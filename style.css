@@ -42,7 +42,16 @@ header{
 header img{
     width:9rem;
 }
+header nav{
+    background-color: #210FF0;
+    border: 1px solid #F4A812;
+    border-radius: 45px;
+    padding: 5px;
+}
 header nav ul{
+    background-image: url(./img/background-nav.png);
+    background-size: 100%;
+    padding: 15px 50px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
