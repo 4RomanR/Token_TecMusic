@@ -85,6 +85,15 @@ header nav ul li a{
     margin: 0 2rem;
     box-shadow: 10px 5px 5px black;
 }
+.section-2{
+    box-sizing: border-box;
+    margin-top: 40px;
+    background-image: url(./img/footer.png);
+    background-size:100%;
+    background-repeat: no-repeat;
+    
+
+}
 .section-2 nav{
     padding: 2rem auto;
 }
@@ -117,10 +126,10 @@ footer{
     justify-content: center;
     align-items: center;
     padding: 40px;
-    text-shadow: 5px 5px 8px black;
+    /* text-shadow: 1px 1px 2px rgb(155, 155, 155); */
     text-align: center;
-
-    
+    background-color: rgb(0, 0, 0);
+ 
 }
 footer div{
     display: flex;
@@ -157,6 +166,9 @@ footer p{
     .section-1 img{
         width:60%;
         margin-bottom: 1rem;
+    }
+    .section-2{
+        background-image: none;    
     }
     .section-2 nav ul{
         flex-wrap: wrap;
