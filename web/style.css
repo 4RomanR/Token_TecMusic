@@ -30,13 +30,12 @@ body{
     rgba(79,56,136,1) 57%, 
     rgba(69,59,134,0.9528186274509804) 75%,
     rgba(129,201,241,1) 97%);
-
 }
 header{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 2rem 10rem 1rem 8rem;
+    padding: 20px 10rem 10px 8rem;
     align-items: center;
     text-shadow: 5px 5px 8px black;
 }
@@ -62,22 +61,23 @@ header nav ul li a{
     justify-content: space-around;
     align-items: center;
     color: white;
+    width: 100%;
 }
 .section-1 h1{
-    margin: 0 20px;
-    padding: 100px;
-    font-size: 42px;
-    text-align: justify;
+    margin: 0 50px;
+    padding: 0 auto;
+    font-size: 40px;
+    text-align: center;
     text-shadow: 5px 5px 8px black;
 }
 .section-1 img{
-    width: 45%;
+    width:50%;
     border-radius: 20px;
     margin: 0 2rem;
     box-shadow: 10px 5px 5px black;
 }
 .section-2 nav{
-    padding: 2rem 8rem 1rem 8rem;
+    padding: 2rem auto;
 }
 .section-2 nav ul{
     display: flex;
@@ -93,6 +93,7 @@ header nav ul li a{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
 }
 .section-2 nav ul li a{
     text-decoration: none;
@@ -106,8 +107,9 @@ footer{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 10px 5rem;
+    padding: 40px;
     text-shadow: 5px 5px 8px black;
+    text-align: center;
 
     
 }
@@ -124,4 +126,69 @@ footer div a{
 
 footer p{
     color: white;
+}
+
+/* --------------------------MEDIA-------------------------- */
+@media (max-width: 780px) {
+    header{
+        flex-direction: column;
+        padding:1rem 0 2rem 0;
+    }
+    header img{
+        width:9rem;
+    }    
+    .section-1{
+        flex-direction: column;
+    }
+    .section-1 h1{
+        margin: 10px 50px;
+        padding: 10px 2rem;
+        font-size: 30px;
+    }
+    .section-1 img{
+        width:60%;
+        margin-bottom: 1rem;
+    }
+    .section-2 nav ul{
+        flex-wrap: wrap;
+        padding: 0 2rem;   
+        justify-content: center;
+    }
+    .section-2 nav ul li{
+        flex-direction: column;
+        padding: 0 10px;
+        width: 40%;
+    }
+}
+@media (max-width: 604px) {
+    body{
+        background: linear-gradient(90deg, 
+        rgba(126,58,161,1) 0%,
+        rgba(252,70,107,1) 30%,
+        rgba(79,56,136,1) 60%, 
+        rgba(129,201,241,1) 100%);
+    }    
+    .section-1 h1{
+        font-size: 1.5rem;
+        text-align: center;
+        text-shadow: 5px 5px 8px black;
+    }
+
+}
+@media (max-width: 480px) {
+    body{
+        justify-content: center;
+        background-image: url(./img/movilback.jpg);
+    }    
+    .section-2 nav ul{
+        flex-wrap: wrap;
+        padding: 0 1rem;   
+        justify-content: center;
+    }
+    .section-2 nav ul li{
+        flex-direction: column;
+        padding: 0 1rem;
+        width: 30%;
+    }
+
 }
