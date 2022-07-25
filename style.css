@@ -8,14 +8,16 @@
 body{
     display: flex;
     flex-direction: column;
-    background: rgb(43,47,108);
+    background-image: url(./img/Background.png);
+    background-size: 100%;
+    /* background: rgb(43,47,108);
     background: linear-gradient(90deg, 
     rgba(43,47,108,1) 1%, 
     rgba(126,58,161,0.969625350140056) 25%, 
     rgba(238, 29, 151, 0.788) 40%, 
     rgba(70,55,148,1) 60%, 
     rgba(69,59,134,0.9528186274509804) 80%, 
-    rgba(105,158,188,1) 100%);
+    rgba(105,158,188,1) 100%); */
     
     /* background: linear-gradient(90deg,
     rgba(43,47,108,1) 1%, 
@@ -83,7 +85,7 @@ header nav ul li a{
     width:50%;
     border-radius: 20px;
     margin: 0 2rem;
-    box-shadow: 10px 5px 5px black;
+    /* box-shadow: 10px 5px 5px black; */
 }
 .section-2{
     box-sizing: border-box;
