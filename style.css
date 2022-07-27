@@ -42,7 +42,7 @@ header{
     text-shadow: 5px 5px 8px black;
 }
 header img{
-    width:9rem;
+    width:15rem;
 }
 header nav{
     background-color: #210FF0;
@@ -50,25 +50,63 @@ header nav{
     border-radius: 45px;
     padding: 5px;
 }
-header nav ul{
+.header-nav ul{
     background-image: url(./img/background-nav.png);
+    background-repeat: no-repeat;
     background-size: 100%;
-    padding: 15px 50px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    list-style: none;
+    padding: 2.5rem 20rem;
+
 }
+.header-nav ul li{
+    position:absolute;
+    right: 5rem;
+}
+
+.header-nav{
+    position: absolute;
+    right: 2rem;
+}
+
 header nav ul li{
     margin: 0 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;        
 }
 header nav ul li a{
     text-decoration: none;
     color: white;
 }
-header nav ul img{
-    width: 5rem;
+.header-list-1{
+    position: absolute;
+    top:-3em;
+    left: -20rem;
 }
+.header-list-1 img{
+    width: 10rem;
+}
+.header-list-2{
+    position: absolute;
+    top:-3em;
+    left: 5rem;
+}
+.header-list-2 img{
+    width: 7.5rem;
+}
+.header-list-3{
+    position: absolute;
+    top:-3em;
+    left: 30rem;
+}
+.header-list-3 img{
+    width: 7.5rem;
+}
+
+
+
+
+
 .section-1{
     display: flex;
     flex-direction: row;
@@ -84,11 +122,11 @@ header nav ul img{
     text-align: center;
     text-shadow: 5px 5px 8px black;
 }
+
 .section-1 img{
     width:50%;
     border-radius: 20px;
     margin: 0 2rem;
-    /* box-shadow: 10px 5px 5px black; */
 }
 .section-2{
     box-sizing: border-box;
@@ -122,7 +160,19 @@ header nav ul img{
     text-decoration: none;
     color: white;
 }
-.section-2 nav ul li img{
+.section-2-list-1 img{
+    width: 60%;
+}
+.section-2-list-2 img{
+    width: 50%;
+}
+.section-2-list-3 img{
+    width: 60%;
+}
+.section-2-list-4 img{
+    width: 60%;
+}
+.section-2-list-5 img{
     width: 60%;
 }
 footer{
@@ -156,6 +206,44 @@ footer p{
 }
 
 /* --------------------------MEDIA-------------------------- */
+
+@media (max-width: 1050px){
+    header img{
+        width:8rem;
+    }
+    header nav{
+        padding: 5px auto;
+    }
+    .header-nav ul{
+        background-size: 80%;
+        padding: 1.5rem 15rem; 
+    }
+    
+    .header-list-1{
+        position: absolute;
+        top:-3em;
+        left: -18rem;
+    }
+    .header-list-1 img{
+        width: 8.7rem;
+    }
+    .header-list-2{
+        position: absolute;
+        top:-3em;
+        left: -3rem;
+    }
+    .header-list-2 img{
+        width: 6.5rem;
+    }
+    .header-list-3{
+        position: absolute;
+        top:-3em;
+        left: 15rem;
+    }
+    .header-list-3 img{
+        width: 6.5rem;
+    }
+}
 @media (max-width: 780px) {
     header{
         flex-direction: column;
