@@ -55,7 +55,7 @@ header nav{
     background-repeat: no-repeat;
     background-size: 100%;
     padding: 2.5rem 20rem;
-
+    margin: 0 auto;
 }
 .header-nav ul li{
     position:absolute;
@@ -68,7 +68,7 @@ header nav{
 }
 
 header nav ul li{
-    margin: 0 20px;
+    margin: 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -211,40 +211,47 @@ footer p{
     header img{
         width:8rem;
     }
-    header nav{
-        padding: 5px auto;
+    body{
+    background: linear-gradient(90deg,
+    rgba(43,47,108,1) 1%, 
+    #FC466B 30%,
+    rgb(127, 58, 161) 70%,
+    #3F5EFB 100%);
+    }
+    .header-nav{
+        margin-right: 3rem;
+        padding: 5px;   
     }
     .header-nav ul{
-        background-size: 80%;
-        padding: 1.5rem 15rem; 
+        background-size: 100%;
+        padding: 1.5rem 12rem; 
     }
-    
     .header-list-1{
         position: absolute;
         top:-3em;
-        left: -18rem;
+        left: -12rem;
     }
     .header-list-1 img{
-        width: 8.7rem;
+        width: 7.5rem;
     }
     .header-list-2{
         position: absolute;
         top:-3em;
-        left: -3rem;
+        left: 0;
     }
     .header-list-2 img{
-        width: 6.5rem;
+        width: 5.5rem;
     }
     .header-list-3{
         position: absolute;
         top:-3em;
-        left: 15rem;
+        left: 12em;
     }
     .header-list-3 img{
-        width: 6.5rem;
+        width: 5.5rem;
     }
 }
-@media (max-width: 780px) {
+@media (max-width: 800px) {
     header{
         flex-direction: column;
         padding:1rem 0 2rem 0;
@@ -252,7 +259,27 @@ footer p{
     header img{
         width:9rem;
     }    
+    .header-nav{
+        top: 13rem;
+        left: 5rem;
+    }
+    .header-nav ul{
+        background-size: 100%;
+        padding: 1.5rem 5rem;
+    }
+    .header-list-1{
+        left: -5rem;
+    }
+    .header-list-2{
+        left: 7rem;
+    }
+    .header-list-3{
+        left: 20em;
+    }
+
+
     .section-1{
+        margin-top: 5rem;
         flex-direction: column;
     }
     .section-1 h1{
