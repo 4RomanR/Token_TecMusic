@@ -268,13 +268,13 @@ footer p{
         padding: 1.5rem 5rem;
     }
     .header-list-1{
-        left: -5rem;
+        left: -7rem;
     }
     .header-list-2{
-        left: 7rem;
+        left: 5rem;
     }
     .header-list-3{
-        left: 20em;
+        left: 16rem;
     }
 
 
@@ -312,6 +312,7 @@ footer p{
         rgba(252,70,107,1) 30%,
         rgba(79,56,136,1) 60%, 
         rgba(129,201,241,1) 100%);
+        background-repeat: no-repeat;
     }    
     .section-1 h1{
         font-size: 1.5rem;
@@ -320,10 +321,12 @@ footer p{
     }
 
 }
+@media (max-width: 520px){
+    
+}
 @media (max-width: 480px) {
     body{
         justify-content: center;
-        background-image: url(./img/movilback.jpg);
     }    
     .section-2 nav ul{
         flex-wrap: wrap;
