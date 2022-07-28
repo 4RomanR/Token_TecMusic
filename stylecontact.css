@@ -3,35 +3,12 @@
     margin: 0;
     padding: 0;
     font-family: 'Quicksand', sans-serif;
-    
 }
 body{
     display: flex;
     flex-direction: column;
-    background-image: url(./img/Background.png);
+    background-image: url(./img/Background-general.png);
     background-size: 100%;
-    /* background: rgb(43,47,108);
-    background: linear-gradient(90deg, 
-    rgba(43,47,108,1) 1%, 
-    rgba(126,58,161,0.969625350140056) 25%, 
-    rgba(238, 29, 151, 0.788) 40%, 
-    rgba(70,55,148,1) 60%, 
-    rgba(69,59,134,0.9528186274509804) 80%, 
-    rgba(105,158,188,1) 100%); */
-    
-    /* background: linear-gradient(90deg,
-    rgba(43,47,108,1) 1%, 
-    #FC466B 30%,
-    rgb(127, 58, 161) 70%,
-    #3F5EFB 100%); */
-
-    /* background: linear-gradient(90deg, 
-    rgba(43,47,108,1) 6%,
-    rgba(126,58,161,1) 25%,
-    rgba(252,70,107,1) 41%,
-    rgba(79,56,136,1) 57%, 
-    rgba(69,59,134,0.9528186274509804) 75%,
-    rgba(129,201,241,1) 97%); */
 }
 header{
     display: flex;
@@ -107,30 +84,20 @@ header nav ul li a{
 }
 
 
-
-
-
-.section-1{
+.contactos{
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    color: white;
-    width: 100%;
 }
-.section-1 h1{
-    margin: 0 50px;
-    padding: 0 auto;
-    font-size: 40px;
-    text-align: center;
-    text-shadow: 5px 5px 8px black;
+.redes-sociales img{
+    width: 10rem;
+}
+.somos-tienda-fisica{
+
 }
 
-.section-1 img{
-    width:50%;
-    border-radius: 20px;
-    margin: 0 2rem;
-}
+
 .section-2{
     box-sizing: border-box;
     margin-top: 40px;
