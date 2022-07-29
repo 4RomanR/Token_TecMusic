@@ -44,28 +44,47 @@
     
         <main>
             <section class="contactos">
-                <div class="redes-sociales">
-                    <h3>Whatsapp</h3>
-                    <a href="https://wa.link/s44ix3">319-3162772</a>
+                <!-- <div class="redes-sociales">
+
                     <a href="https://wa.link/xknwwp">319-3162672</a>
                     <a href="https://wa.link/xknwwp">
                         <img class="container" src="./icons/whatsapp.png" alt="whatsapp">
                     </a>
                     <a class="instagram" href="https://www.instagram.com/token.music/">Instagram <img src="./icons/instaicon.png" alt=""></a>
                     <a class="facebook" href="https://www.facebook.com/token.tecmusic">Facebook <img src="./icons/faceicon.png" alt=""></a>
-    
+                    
+                </div> -->
+                <div class="contactos-content">
+                    <div class="redes-sociales">    
+                        <a href="https://wa.link/s44ix3"><img class="container" src="./icons/whatsapp.png" alt="whatsapp">Contacta por Whatsapp <br> 319-3162772</a>
+                        <a class="instagram" href="https://www.instagram.com/token.music/"><img src="./icons/instaicon.png" alt=""></a>
+                        <a class="facebook" href="https://www.facebook.com/token.tecmusic"><img src="./icons/faceicon.png" alt=""></a>
+                    </div>
+                    <form action="enviar.php" method="post">
+                        <h2 id="Contacto">¡Afíliate Aquí!</h2>
+                        <div class="f_inputs">
+                            <input type="text" name="name"  placeholder="Nombre y Apellido" required>
+                            <input type="text" name="mail"  placeholder="email" required>
+                            <input type="text" name="phone"  placeholder="Número de Contacto" required>
+                        </div>
+                        <div class="f_terms">
+                            <a href="./Pages/E-Terminos.html">Acepto términos y condiciones.</a>
+                            <input class="f_terms_input" type="checkbox" data-requiered="1" name="Terminos y Condiciones" id="Terminos y Condiciones" required>
+                        </div>
+                        <div class="f_enviar">   
+                            <button type="submit" name="enviar">Enviar</button>
+                        </div>
+                    </form>         
                 </div>
 
 
                 <div class="direccion">
-                    <h3 class="somos-tienda-fisica">Somos TIENDA FÍSICA</h3>
-                    <p>DIAGONAL 182 20 91 CC PANAMA OF 232 234 A</p>
+                    <h3>Somos <br> TIENDA FÍSICA</h3>
+                    <p>CC Panamá <br> Diagonal 182#20-91Local 232 234A</p>
                     <a href="https://www.google.es/maps?daddr=DIAGONAL+182+20+91+CC+PANAMA+OF+232+234+A,+BOGOTA,+BOGOTA">¿Cómo llegar?</a>
                     <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d9456.742026957458!2d-74.04511647115706!3d4.757808551454906!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x6f8d0cff7b91d1b7!2sCentro%20Comercial%20Panam%C3%A1!5e0!3m2!1ses!2sus!4v1659005771439!5m2!1ses!2sus" 
-                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    width="500" height="350" style="border-radius: 10px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
-
-
             </section>
             <section class="section-2">
                 <nav>

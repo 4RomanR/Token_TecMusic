@@ -9,7 +9,7 @@ body{
     display: flex;
     flex-direction: column;
     background-image: url(./img/Background.png);
-    background-size: 100%;
+    background-size: cover;
     /* background: rgb(43,47,108);
     background: linear-gradient(90deg, 
     rgba(43,47,108,1) 1%, 
