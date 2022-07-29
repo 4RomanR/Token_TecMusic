@@ -84,7 +84,6 @@ header nav ul li a{
     width: 3rem;
 }
 
-
 .contactos{
     display: flex;
     flex-direction: row;
@@ -257,7 +256,7 @@ footer a{
         left: -12rem;
     }
     .header-list-1 img{
-        width: 7.5rem;
+        width: 3rem;
     }
     .header-list-2{
         position: absolute;
@@ -265,7 +264,7 @@ footer a{
         left: 0;
     }
     .header-list-2 img{
-        width: 5.5rem;
+        width: 3rem;
     }
     .header-list-3{
         position: absolute;
@@ -273,7 +272,22 @@ footer a{
         left: 12em;
     }
     .header-list-3 img{
-        width: 5.5rem;
+        width: 3rem;
+    }
+
+    .contactos{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+    .contactos-content{
+        align-content: center;
+        justify-content:center;
+        align-items: center;
+    }
+    form{
+        padding: 0 10rem;
     }
 }
 @media (max-width: 800px) {
