@@ -10,6 +10,28 @@ body{
     flex-direction: column;
     background-image: url(../img/Background.png);
     background-size: cover;
+    /* background: rgb(43,47,108);
+    background: linear-gradient(90deg, 
+    rgba(43,47,108,1) 1%, 
+    rgba(126,58,161,0.969625350140056) 25%, 
+    rgba(238, 29, 151, 0.788) 40%, 
+    rgba(70,55,148,1) 60%, 
+    rgba(69,59,134,0.9528186274509804) 80%, 
+    rgba(105,158,188,1) 100%); */
+    
+    /* background: linear-gradient(90deg,
+    rgba(43,47,108,1) 1%, 
+    #FC466B 30%,
+    rgb(127, 58, 161) 70%,
+    #3F5EFB 100%); */
+
+    /* background: linear-gradient(90deg, 
+    rgba(43,47,108,1) 6%,
+    rgba(126,58,161,1) 25%,
+    rgba(252,70,107,1) 41%,
+    rgba(79,56,136,1) 57%, 
+    rgba(69,59,134,0.9528186274509804) 75%,
+    rgba(129,201,241,1) 97%); */
 }
 
 /* ---------------HEADER--------------- */
@@ -108,7 +130,7 @@ main{
     color: white;
 }
 .section-2 nav ul li img{
-    width: 3rem;
+    width: 5rem;
 }
 
 footer{
