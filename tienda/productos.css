@@ -8,7 +8,8 @@
 body{
     display: flex;
     flex-direction: column;
-    background-image: url(../img/Background.png);
+    background-color: #FF3CAC;
+    background-image: linear-gradient(225deg, #FF3CAC 0%, #784BA0 50%, #2B86C5 100%);
     background-size: cover;
 }
 
@@ -67,23 +68,7 @@ main{
     justify-content: center;
     align-items: center;
 }
-.section-1 {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-}
-.section-1-a h3, .section-1-a p, .section-1-a a{
-    margin: 0.5rem 0;
-    color: white;
-    text-align: center;
-    
-}
-.section-1-b img{
-    width: 500px;
-    box-shadow: 2px 2px 8px ;
-    margin-left: 4rem;
-}
+
 .section-2{
     margin: 2rem 0;
 }
@@ -110,7 +95,29 @@ main{
 .section-2 nav ul li img{
     width: 3rem;
 }
+/* ---------------CATEGORIAS--------------- */
 
+
+.categorias{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 0 10rem;
+}
+.categorias a{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+    text-decoration: none;
+    color: white;
+}
+
+
+/* ---------------FOOTER--------------- */
 footer{
     display: flex;
     flex-direction: column;
