@@ -43,7 +43,7 @@ header img{
     
 }
 .header-nav ul li img{
-    width: 4rem;
+    width: 6rem;
     margin: 0 1rem;
 }
 
@@ -70,12 +70,21 @@ main{
 }
 
 .section-2{
-    margin: 2rem 0;
+    margin: 3rem 0;
+    background-color: #2929297a;
+    width: 100%;
+}
+.main-title{
+    text-align: center;
+    color: white;
+    padding: 1rem 0;
+    text-shadow: 5px 5px 7px #000;
 }
 .section-2 nav ul{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
+    padding: 1rem;
 }
 .section-2 nav ul li{
     margin: 0 20px;
@@ -93,7 +102,7 @@ main{
     color: white;
 }
 .section-2 nav ul li img{
-    width: 3rem;
+    width: 6rem;
 }
 /* ---------------CATEGORIAS--------------- */
 

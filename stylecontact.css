@@ -43,7 +43,7 @@ header img{
     
 }
 .header-nav ul li img{
-    width: 4rem;
+    width: 6rem;
     margin: 0 1rem;
 }
 
@@ -143,23 +143,25 @@ form .f_inputs input{
 }
 .section-2{
     box-sizing: border-box;
-    margin: 3rem 0;
+    margin-top: 40px;
     background-image: url(./img/footer.png);
     background-size:100%;
     background-repeat: no-repeat;
+    
 }
-
 .section-2 nav{
-    padding: 2rem auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .section-2 nav ul{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     
 }
 .section-2 nav ul li{
-    margin: 0 20px;
+    margin: 2rem 2rem 0;
     text-decoration: none;
     list-style: none;
     display: flex;
@@ -172,22 +174,12 @@ form .f_inputs input{
 .section-2 nav ul li a{
     text-decoration: none;
     color: white;
+    margin-bottom: 1rem;
 }
-.section-2-list-1 img{
-    width: 3.5rem;
+.section-2 img{
+    width: 6rem;
 }
-.section-2-list-2 img{
-    width: 3.5rem;
-}
-.section-2-list-3 img{
-    width: 3.5rem;
-}
-.section-2-list-4 img{
-    width: 3.5rem;
-}
-.section-2-list-5 img{
-    width: 3.5rem;
-}
+
 footer{
     display: flex;
     flex-direction: column;
