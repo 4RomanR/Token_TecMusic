@@ -8,8 +8,7 @@
 body{
     display: flex;
     flex-direction: column;
-    background-color: #FF3CAC;
-    background-image: linear-gradient(225deg, #FF3CAC 0%, #784BA0 50%, #2B86C5 100%);
+    background-image: url(../img/Background-general.png);
     background-size: cover;
 }
 
@@ -59,35 +58,68 @@ header nav ul li a{
     color: white;
     margin: 0 1rem;
 }
- 
 
+ 
 /* ---------------MAIN--------------- */
-main{
+
+.section-1{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: space-between;
+
+    text-align: justify;
+}
+.section-1-a{
+    padding: 0 5rem;
+    color: white;
+}
+.section-1-a h3, h6{
+    font-size: 2.5rem;
+    margin-top: 1rem;
+    text-shadow:-2px 2px 7px #000;
+}
+.section-1-a p{
+    font-size: 1rem;
+    margin-top: 1rem;
+}
+.section-1-a a, li{
+    text-decoration: none;
+    list-style: none;
+    color: white;
+}
+
+
+
+.section-1-b img{
+    width: 35rem;
+    margin:0 3rem;
+    box-shadow: -5px 5px 5px #000;
+    border-radius: 10px;
+}
+
+
+/* ---------------CATEGORIAS--------------- */
+.section-2{
+    box-sizing: border-box;
+    margin-top: 40px;
+    background-image: url(../img/footer.png);
+    background-size:100%;
+    background-repeat: no-repeat;
+    
+}
+.section-2 nav{
+    display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.section-2{
-    margin: 3rem 0;
-    background-color: #2929297a;
-    width: 100%;
-}
-.main-title{
-    text-align: center;
-    color: white;
-    padding: 1rem 0;
-    text-shadow: 5px 5px 7px #000;
 }
 .section-2 nav ul{
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    padding: 1rem;
+    justify-content: space-around;
+    
 }
 .section-2 nav ul li{
-    margin: 0 20px;
+    margin: 2rem 2rem 0;
     text-decoration: none;
     list-style: none;
     display: flex;
@@ -100,33 +132,12 @@ main{
 .section-2 nav ul li a{
     text-decoration: none;
     color: white;
+    margin-bottom: 1rem;
 }
-.section-2 nav ul li img{
+.section-2 img{
     width: 6rem;
 }
-/* ---------------CATEGORIAS--------------- */
 
-
-.categorias{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    margin: 0 10rem;
-}
-.categorias a{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 1rem;
-    text-decoration: none;
-    color: white;
-}
-
-
-/* ---------------FOOTER--------------- */
 footer{
     display: flex;
     flex-direction: column;
