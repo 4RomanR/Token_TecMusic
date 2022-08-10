@@ -104,16 +104,39 @@ header nav ul li a{
     text-align: center;
 }
 .categorias-instrumentos{
+    display: grid;
+    place-content: center;
+    
+    grid-template-columns: 15rem 15rem 15rem 15rem ;    
+    grid-template-rows: 20rem 20rem 20rem   ;
+
+    margin: 1rem auto;
+}
+.instrumento :nth-child(3){
+    text-decoration: none;
+    color: white;
+    padding: 0.8rem 1rem;
+    background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+    border-radius: 3px;
+    box-shadow: 3px 3px 8px #000;
+    
+}
+.categorias-instrumentos p{
+    color: white;
+    margin: 1rem;
+}
+.instrumento{
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
+    margin: 1rem;
+    border-radius: 3px;
+    box-shadow: 3px 3px 8px #000;
 
+    
 }
-.categorias-instrumentos{
-    text-align: center;
 
-}
 /* ---------------CATEGORIAS--------------- */
 .section-2{
     box-sizing: border-box;
