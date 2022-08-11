@@ -104,7 +104,12 @@ header nav ul li a{
     justify-content: space-around;
 }
 /* ---------------CAT INSTRUMENTOS--------------- */
-
+.cat-instrumentos p{
+    margin: 1rem 3rem 2rem;
+    color: white;
+    font-size: 24px;
+    text-shadow: 5px 5px 8px #000;
+}
 .cat-instrumentos li{
     margin: 1rem;
     box-shadow: 0 1px 8px #000;
@@ -127,10 +132,6 @@ header nav ul li a{
     transform:scale(1.2);
     transition: transform 2s;
     color:rgb(217, 255, 155);
-
-
-    
-
 }
 
 
