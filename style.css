@@ -89,6 +89,39 @@ header nav ul li a{
     text-shadow: 5px 5px 8px black;
 }
 
+
+/* ---------------HAMBURGER--------------- */
+
+.menu-hamb{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    top: 5rem;
+    left: 1rem;
+    background-color: rgba(248, 248, 248, 0.876);
+    padding: 15%;
+    border-radius: 10px;
+    box-shadow: 5px 5px 7px;
+        
+}
+.menu-hamb li{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+.menu-hamb a{
+    font-size: 22px;
+    color: black;
+}
+.menu-hamb img{
+    width: 5rem;
+}
+
+.inactive{
+    display: none;
+}
 .section-1 img{
     width:50%;
     border-radius: 20px;
@@ -96,10 +129,11 @@ header nav ul li a{
 }
 .section-2{
     box-sizing: border-box;
-    margin-top: 40px;
+    margin: 40px 0 0;
     background-image: url(./img/footer.png);
     background-size:100%;
     background-repeat: no-repeat;
+    background-position:center bottom;
     
 }
 .section-2 nav{
@@ -164,24 +198,11 @@ footer a{
 }
 /* --------------------------MEDIA-------------------------- */
 
-@media (max-width: 1050px){
-    header img{
-        width:8rem;
-    }
-    .header-nav ul{
-        background-size: 80%;
-        padding: 0 3rem;
-        margin: 0 auto;
-    }
-    .header-nav ul li img{
-        width: 2rem;
-        margin: 0 1rem;
-    }
-}
-@media (max-width: 800px) {
+
+@media (max-width: 940px) {
     header{
         flex-direction: column;
-        padding:1rem 0 2rem 0;
+        padding: 1rem 0 2rem 0;
         margin-top: 2rem;
     }
     .header-nav ul{
@@ -197,36 +218,34 @@ footer a{
     .section-1 img{
         width:80%;
     }
-    .section-2{
-        background-image: none;    
-    }
-    .section-2 nav ul{
-        flex-wrap: nowrap;
-        padding: 0 3rem;   
-        justify-content: center;
-    }
     .section-2 nav ul li{
-        flex-direction: column;
-        padding: 0 5px;
-        width: 100%;
+        margin: 2rem 0;
     }
 }
-@media (max-width: 604px) {
+@media (max-width: 604px){
     .section-1 h1{
         font-size: 1.5rem;
         text-align: center;
         text-shadow: 5px 5px 8px black;
     }
-
-}
-@media (max-width: 520px){
+    .header-nav ul{
+       display: none;
+    }  
+    
     .menu_burger{
         display: block;
         position: absolute;
+        top: 1rem;
         width: 4rem;
         left: 20px;
         box-shadow:5px 5px 5px;
     }
+    .section-1 img{
+        margin: 1rem 0;
+        width:100%;
+    }
+}
+@media (max-width: 520px){
     .section-1 h1{
         padding: 0 5px;
         font-size: 30px;
@@ -234,38 +253,23 @@ footer a{
     .header-nav{
         display: none;
     }
-
-    .section-1 img{
-        width:100%;
-    }
-    .section-2 nav ul{
-        flex-wrap: wrap;
-        padding: 0 1rem;   
-        justify-content: center;
-    }
-    .section-2 nav ul li{
-        flex-direction: column;
-        padding: 0 1rem 1rem;
-        width: 30%;
-    }
-    .section-2 ul li img{
-        width: 3rem;
-        margin: 0 1rem;
-    }
 }
-@media (max-width: 480px) {
+@media (max-width: 480px){
     body{
         justify-content: center;
     }    
+    .section-2{
+        background-image: none;       
+    }
     .section-2 nav ul{
         flex-wrap: wrap;
         padding: 0 1rem;   
         justify-content: center;
+
     }
     .section-2 nav ul li{
         flex-direction: column;
         padding: 0 1rem;
         width: 30%;
     }
-
 }
