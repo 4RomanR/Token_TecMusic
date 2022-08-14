@@ -104,13 +104,17 @@ header nav ul li a{
     justify-content: space-around;
 }
 /* ---------------CAT INSTRUMENTOS--------------- */
-.cat-instrumentos p{
+.p-categoria-instrumentos{
     margin: 1rem 3rem 2rem;
     color: white;
     font-size: 24px;
     text-shadow: 5px 5px 8px #000;
+    cursor: pointer;
 }
-.cat-instrumentos li{
+.inactive{
+    display: none;
+}
+.cat-inst-menu li{
     margin: 1rem;
     box-shadow: 0 1px 8px #000;
     padding: 1rem 0;
