@@ -8,37 +8,42 @@
 body{
     display: flex;
     flex-direction: column;
-    background-image: url(./img/Background.png);
+    background-image: url(../img/Background.png);
     background-size: cover;
 }
 
 /* ---------------HEADER--------------- */
+header .burger_space{
+    display: none;
+}
+.menu_burger{
+    display: none;
+    width: 4rem;
+    position: absolute;
+}
 
 header{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
-    margin: 0 auto;
     text-shadow: 5px 5px 8px black;
 }
-header img{
-    width:15rem;
-}
-.menu_burger{
-    display: none;
-}
 
+header img {
+    width: 15rem;
+    margin: 1rem 5rem ;
+}
 .header-nav ul{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    background-image: url(./img/background-nav.png);
+    background-image: url(../img/background-nav.png);
     background-repeat: no-repeat;
     background-size: 100%;
     background-position: center;
     padding: 0 3rem;
-    margin: 0 auto;
+    margin: 1rem 5rem;
     
 }
 .header-nav ul li img{
@@ -56,7 +61,7 @@ header img{
 header nav ul li a{
     text-decoration: none;
     color: white;
-    margin: 0 1rem;
+    margin: 0;
 }
 
 
@@ -64,48 +69,79 @@ header nav ul li a{
 
         /* Terminos y condiciones */
 
-        .section-terms{
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            color: white;   
-            margin: 1rem 9rem;
-            text-align: justify;
-        }
-
+    .section-terms{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: white;   
+        margin: 1rem 9rem;
+        text-align: justify;
+    }
 .section-1{
     display: flex;
-    flex-direction: column;
-    align-content: center;
+    flex-direction: row;
+    justify-content: space-around;
     align-items: center;
-    color: blanchedalmond;
-    margin: 5rem auto;
-    width: 50rem;    
+    color: white;
+    width: 100%;
 }
-.section-1 h3{
-    margin: 1rem;
+.section-1 h1{
+    margin: 0 50px;
     padding: 0 auto;
     font-size: 40px;
     text-align: center;
     text-shadow: 5px 5px 8px black;
 }
-.section-1 p{
-    margin: 0.5rem;
-    text-align:justify;
-    padding: 0 5rem;
-    text-shadow: 2px 2px 5px black;
+
+
+/* ---------------HAMBURGER--------------- */
+
+.menu-hamb{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    top: 5rem;
+    left: 1rem;
+    background-image: linear-gradient(160deg, #0094e9f2 0%, #80d0c7f2 100%);
+
+
+    /* background-color: rgba(248, 248, 248, 0.876); */
+    padding: 15%;
+    border-radius: 10px;
+    box-shadow: 5px 5px 7px;
+        
 }
-.section-1 p a{
-    color: bisque;
+.menu-hamb li{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+.menu-hamb a{
+    font-size: 22px;
+    color: rgb(255, 255, 255);
+}
+.menu-hamb img{
+    width: 5rem;
 }
 
+.inactive{
+    display: none;
+}
+.section-1 img{
+    width:50%;
+    border-radius: 20px;
+    margin: 0 2rem;
+}
 .section-2{
     box-sizing: border-box;
     margin: 40px 0 0;
-    background-image: url(./img/footer.png);
+    background-image: url(../img/footer.png);
     background-size:100%;
     background-repeat: no-repeat;
+    background-position:center bottom;
     
 }
 .section-2 nav{
@@ -148,7 +184,7 @@ footer{
     /* text-shadow: 1px 1px 2px rgb(155, 155, 155); */
     text-align: center;
     background-color: rgba(0, 0, 0, 0.61);
-    
+
     padding: 1rem;
     font-size: small;
  
@@ -170,24 +206,11 @@ footer a{
 }
 /* --------------------------MEDIA-------------------------- */
 
-@media (max-width: 1050px){
-    header img{
-        width:8rem;
-    }
-    .header-nav ul{
-        background-size: 80%;
-        padding: 0 3rem;
-        margin: 0 auto;
-    }
-    .header-nav ul li img{
-        width: 2rem;
-        margin: 0 1rem;
-    }
-}
-@media (max-width: 800px) {
+
+@media (max-width: 940px) {
     header{
         flex-direction: column;
-        padding:1rem 0 2rem 0;
+        padding: 1rem 0 2rem 0;
         margin-top: 2rem;
     }
     .header-nav ul{
@@ -203,36 +226,41 @@ footer a{
     .section-1 img{
         width:80%;
     }
-    .section-2{
-        background-image: none;    
-    }
-    .section-2 nav ul{
-        flex-wrap: nowrap;
-        padding: 0 3rem;   
-        justify-content: center;
-    }
     .section-2 nav ul li{
-        flex-direction: column;
-        padding: 0 5px;
-        width: 100%;
+        margin: 2rem 0;
     }
+
 }
-@media (max-width: 604px) {
+@media (max-width: 604px){
     .section-1 h1{
         font-size: 1.5rem;
         text-align: center;
         text-shadow: 5px 5px 8px black;
     }
-
-}
-@media (max-width: 520px){
+    .header-nav ul{
+       display: none;
+    }  
+    header .burger_space{
+        display: block;
+    }
     .menu_burger{
         display: block;
-        position: absolute;
-        width: 4rem;
+        
+        top: 1rem;
         left: 20px;
         box-shadow:5px 5px 5px;
     }
+    .section-1 img{
+        margin: 1rem 0;
+        width:100%;
+    }
+}
+@media (min-width: 605px){
+    .menu-hamb{
+        display: none;
+    }
+}
+@media (max-width: 520px){
     .section-1 h1{
         padding: 0 5px;
         font-size: 30px;
@@ -240,38 +268,23 @@ footer a{
     .header-nav{
         display: none;
     }
-
-    .section-1 img{
-        width:100%;
-    }
-    .section-2 nav ul{
-        flex-wrap: wrap;
-        padding: 0 1rem;   
-        justify-content: center;
-    }
-    .section-2 nav ul li{
-        flex-direction: column;
-        padding: 0 1rem 1rem;
-        width: 30%;
-    }
-    .section-2 ul li img{
-        width: 3rem;
-        margin: 0 1rem;
-    }
 }
-@media (max-width: 480px) {
+@media (max-width: 480px){
     body{
         justify-content: center;
     }    
+    .section-2{
+        background-image: none;       
+    }
     .section-2 nav ul{
         flex-wrap: wrap;
         padding: 0 1rem;   
         justify-content: center;
+
     }
     .section-2 nav ul li{
         flex-direction: column;
         padding: 0 1rem;
         width: 30%;
     }
-
 }
