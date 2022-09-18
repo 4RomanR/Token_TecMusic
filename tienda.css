@@ -68,6 +68,8 @@ header nav ul li a{
     justify-content: center;
     align-items: center;
     text-align: center;
+    margin: 5rem;
+    padding: 4rem 0 5rem 0;
 }
 .section-1 h3, p, a{
     margin: 0.5rem 0;
